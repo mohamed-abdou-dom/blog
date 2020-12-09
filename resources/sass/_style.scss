@@ -1,0 +1,136 @@
+.navbar{
+    background-color: #FF2D20;
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(255,26,26,0.59); 
+    box-shadow: 0px 6px 16px 0px rgba(255,26,26,0.59);
+    .navbar-brand{
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 30px;
+        text-transform: capitalize;
+        letter-spacing: 1.8px;
+        &:hover{color: gold;}
+    }
+    .navbar-brand.router-link-active{color:gold;}
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: 100;
+                text-transform: capitalize;
+                letter-spacing: 1.3px;
+                &:hover{color: gold;}
+            }
+            .router-link-active{
+                color: gold;
+            }
+        }
+    }
+}
+
+.auth{
+    h2{
+        color: cadetblue;
+        text-transform: capitalize;
+        letter-spacing: 1.2px;
+        font-size: 35px;
+        font-weight: 100;
+    }
+    form{
+        input{
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid cadetblue;
+            margin-bottom: 30px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        button{
+            border-radius: 0;
+            background-color: #ffffff;
+            color: cadetblue;
+            border: 1px solid cadetblue;
+            font-size: 18px;
+            padding: 10px 25px;
+            &:hover{
+                background-color: cadetblue;
+                color: #ffffff;
+                border: none;
+            }
+        }
+    }
+}
+
+.articles{
+    .card{
+        .card-title{
+            .article-title{
+                color: #FF2D20;
+                text-transform: capitalize;
+                font-size: 28px;
+                letter-spacing: 1.3px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        .card-text{
+            color: #c5a6a4;
+            font-size: 16px;
+        }
+        .author-details{
+            color: burlywood;
+            text-transform: capitalize;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 1.3px;
+        }
+    }
+}
+
+.article{
+    .card{
+        .card-title{
+            color: #FF2D20;
+            text-transform: capitalize;
+            font-size: 28px;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .card-text{
+            color: #c5a6a4;
+            font-size: 16px;
+        }
+        .author-details{
+            color: burlywood;
+            text-transform: capitalize;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 1.3px;
+        }
+    }
+}
+
+.welcome{
+    position: relative;
+    background-image: url('/images/wel.jpg');
+    background-size: cover;
+    height: 100vh;
+    .wel-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255,45,32,0.6);
+        h3{
+            color: #ffffff;
+            font-size: 44px;
+            margin-top: 40vh;
+            font-weight: 900;
+            letter-spacing: 1.4px;
+        }
+    }
+}
