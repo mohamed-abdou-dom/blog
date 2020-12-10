@@ -57,10 +57,6 @@ export default {
                 this.$router.push('/home');
                 this.$Progress.finish();
             })
-            .catch((error)=>{
-                this.form.fill(error);
-                this.$Progress.fail();
-            })
         }
     }
 }

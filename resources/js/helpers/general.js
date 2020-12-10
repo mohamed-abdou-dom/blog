@@ -23,7 +23,7 @@ export function initialize(store, router) {
     // });
    
     axios.interceptors.response.use(null, (error) => {
-        if (error.response && error.response.status == 401) {
+        if (     error.response.status == 401) {
             store.commit('logout');
             router.push('/');
         }

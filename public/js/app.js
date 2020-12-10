@@ -2181,10 +2181,6 @@ __webpack_require__.r(__webpack_exports__);
         _this.$router.push('/home');
 
         _this.$Progress.finish();
-      })["catch"](function (error) {
-        _this.form.fill(error);
-
-        _this.$Progress.fail();
       });
     }
   }
@@ -88611,7 +88607,7 @@ function initialize(store, router) {
   // });
 
   axios.interceptors.response.use(null, function (error) {
-    if (error.response && error.response.status == 401) {
+    if (error.response.status == 401) {
       store.commit('logout');
       router.push('/');
     }
