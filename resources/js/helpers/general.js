@@ -13,17 +13,9 @@ export function initialize(store, router) {
             next();
         }
     });
-    
-    // axios.interceptors.response.use(null, (error) => {
-    //     if (error.resposne.status == 401) {
-    //         store.commit('logout');
-    //         router.push('/');
-    //     }
-    //     return Promise.reject(error);
-    // });
    
     axios.interceptors.response.use(null, (error) => {
-        if (     error.response.status == 401) {
+        if (error.response.status == 401) {
             store.commit('logout');
             router.push('/');
         }
